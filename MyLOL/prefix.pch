@@ -1,0 +1,22 @@
+//
+//  prefix.pch
+//  MyLOL
+//
+//  Created by kayle on 15/10/13.
+//  Copyright © 2015年 bestkayle. All rights reserved.
+//
+
+#ifndef prefix_pch
+#define prefix_pch
+#define kArray @[@"B",@"Q",@"W",@"E",@"R"]
+#define kSkillArray @[_heroInfo.Skill_B,_heroInfo.Skill_Q,_heroInfo.Skill_W,_heroInfo.Skill_E,_heroInfo.Skill_R]
+
+#define kTop 10
+#define kLeft 10
+#define kHorizontal 15
+#define kVertical 15
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* prefix_pch */
