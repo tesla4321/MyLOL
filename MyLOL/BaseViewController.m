@@ -26,11 +26,11 @@
     _bottomView.userInteractionEnabled = 1;
     [self.view addSubview:_bottomView];
     
-    UIButton *backBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    backBtn.frame = CGRectMake(10, _topView.bounds.size.height - 30, 20, 20);
-    [backBtn setImage:[UIImage imageNamed:@"small"] forState:(UIControlStateNormal)];
-    [backBtn addTarget:self action:@selector(back:) forControlEvents:(UIControlEventTouchUpInside)];
-    [self.view addSubview:backBtn];
+    _backBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    _backBtn.frame = CGRectMake(10, _topView.bounds.size.height - 30, 20, 20);
+    [_backBtn setImage:[UIImage imageNamed:@"small"] forState:(UIControlStateNormal)];
+    [_backBtn addTarget:self action:@selector(back:) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:_backBtn];
     
     // Do any additional setup after loading the view.
 }

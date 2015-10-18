@@ -10,8 +10,9 @@
 #import "TopView.h"
 #import "UIImageView+WebCache.h"
 #import "DataView.h"
-
+#import "TalentViewController.h"
 #import "NetHandler.h"
+#import "CompareViewController.h"
 @interface HeroInformationViewController ()
 @property(nonatomic,strong)TopView *heroInfoTopView;
 
@@ -40,6 +41,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _heroInfoTopView = [[TopView alloc]initWithFrame:(CGRectMake(0, self.topView.bounds.size.height, self.view.bounds.size.width, self.view.bounds.size.height/6))];
+    [_heroInfoTopView.talentButton addTarget:self action:@selector(switchToTalent:) forControlEvents:(UIControlEventTouchUpInside)];
+    [_heroInfoTopView.compareHeroBtton addTarget:self action:@selector(comparehero) forControlEvents:(UIControlEventTouchUpInside)];
+    
     [self.view addSubview:_heroInfoTopView];
     
     //segmented
@@ -63,8 +67,34 @@
     // Do any additional setup after loading the view.
 }
 
+#pragma mark-英雄对比
+- (void)comparehero{
+    
+    CompareViewController *compareVC = [[CompareViewController alloc]init];
+    [self.navigationController pushViewController:compareVC animated:1];
+}
+
+
+
 - (void)displayChange:(UISegmentedControl *)seg{
     [self.bottomView bringSubviewToFront:[self.bottomView viewWithTag:seg.selectedSegmentIndex + 4000]];
+    
+}
+
+- (void)switchToTalent:(UIButton *)button{
+    [NetHandler getDataWithUrl:[NSString stringWithFormat:@"http://box.dwstatic.com/apiHeroSuggestedGiftAndRun.php?v=70&hero=%@&OSType=iOS8.1.2",_heroInfomation.hero.enName] completion:^(NSData *data) {
+        NSArray *arr = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        NSDictionary *dic = arr[0];
+        _fwModel = [[FWTFmodel alloc]init];
+        [_fwModel setValuesForKeysWithDictionary:dic];
+        
+        TalentViewController *talentVC = [[TalentViewController alloc]init];
+        
+        talentVC.fwModel = _fwModel;
+        [self.navigationController pushViewController:talentVC animated:1];
+        
+    }];
+    
     
 }
 

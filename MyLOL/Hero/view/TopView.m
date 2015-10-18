@@ -33,20 +33,20 @@
         _characterLabel.lineBreakMode = NSLineBreakByClipping;
         [self addSubview:_characterLabel];
         
-        UIButton *compareHeroBtton = [UIButton buttonWithType:(UIButtonTypeSystem)];
-        compareHeroBtton.frame = CGRectMake(_nameLabel.frame.origin.x + _nameLabel.bounds.size.width + 20, _nameLabel.frame.origin.y, frame.size.width/5, frame.size.height/3);
-        [compareHeroBtton setTitle:@"英雄对比" forState:(UIControlStateNormal)];
-        compareHeroBtton.backgroundColor = [UIColor orangeColor];
-        compareHeroBtton.layer.cornerRadius = 10;
-        [self addSubview:compareHeroBtton];
+        _compareHeroBtton = [UIButton buttonWithType:(UIButtonTypeSystem)];
+        _compareHeroBtton.frame = CGRectMake(_nameLabel.frame.origin.x + _nameLabel.bounds.size.width + 20, _nameLabel.frame.origin.y, frame.size.width/5, frame.size.height/3);
+        [_compareHeroBtton setTitle:@"英雄对比" forState:(UIControlStateNormal)];
+        _compareHeroBtton.backgroundColor = [UIColor orangeColor];
+        _compareHeroBtton.layer.cornerRadius = 10;
+        [self addSubview:_compareHeroBtton];
         
         
-        UIButton *talentButton = [UIButton buttonWithType:(UIButtonTypeSystem)];
-        talentButton.frame = CGRectMake(compareHeroBtton.frame.origin.x, compareHeroBtton.frame.origin.y + compareHeroBtton.bounds.size.height + 10, compareHeroBtton.bounds.size.width, compareHeroBtton.bounds.size.height);
-        [talentButton setTitle:@"天赋符文" forState:(UIControlStateNormal)];
-        talentButton.backgroundColor = [UIColor orangeColor];
-        talentButton.layer.cornerRadius = 10;
-        [self addSubview:talentButton];
+        _talentButton = [UIButton buttonWithType:(UIButtonTypeSystem)];
+        _talentButton.frame = CGRectMake(_compareHeroBtton.frame.origin.x, _compareHeroBtton.frame.origin.y + _compareHeroBtton.bounds.size.height + 10, _compareHeroBtton.bounds.size.width, _compareHeroBtton.bounds.size.height);
+        [_talentButton setTitle:@"天赋符文" forState:(UIControlStateNormal)];
+        _talentButton.backgroundColor = [UIColor orangeColor];
+        _talentButton.layer.cornerRadius = 10;
+        [self addSubview:_talentButton];
         
         
         

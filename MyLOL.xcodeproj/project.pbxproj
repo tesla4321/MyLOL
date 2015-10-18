@@ -53,6 +53,13 @@
 		0D66FBB01BD11D2D00A42CEC /* EquipmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D66FBAF1BD11D2D00A42CEC /* EquipmentView.m */; settings = {ASSET_TAGS = (); }; };
 		0D66FBB31BD1214E00A42CEC /* SuggestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D66FBB21BD1214E00A42CEC /* SuggestTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		0D66FBB91BD133B800A42CEC /* Equip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D66FBB81BD133B800A42CEC /* Equip.m */; settings = {ASSET_TAGS = (); }; };
+		0D69E6C21BD1F58C00AFAC72 /* TalentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D69E6C11BD1F58C00AFAC72 /* TalentViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0D69E6C41BD1FFAE00AFAC72 /* downloadImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D69E6C31BD1FFAE00AFAC72 /* downloadImg.png */; settings = {ASSET_TAGS = (); }; };
+		0D69E6C61BD2013100AFAC72 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D69E6C51BD2013100AFAC72 /* download.png */; settings = {ASSET_TAGS = (); }; };
+		0D69E6C91BD2217C00AFAC72 /* FWTFmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D69E6C81BD2217C00AFAC72 /* FWTFmodel.m */; settings = {ASSET_TAGS = (); }; };
+		0D69E6CC1BD272B300AFAC72 /* ZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D69E6CB1BD272B300AFAC72 /* ZoomScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		0D69E6CF1BD2903A00AFAC72 /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D69E6CE1BD2903A00AFAC72 /* CompareViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0D69E6D21BD29CBD00AFAC72 /* ChooseTwoHeroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D69E6D11BD29CBD00AFAC72 /* ChooseTwoHeroView.m */; settings = {ASSET_TAGS = (); }; };
 		0DD489051BCCE032005AF9BB /* HeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD489041BCCE032005AF9BB /* HeroViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0DD489081BCCE194005AF9BB /* FreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD489071BCCE194005AF9BB /* FreeView.m */; settings = {ASSET_TAGS = (); }; };
 		0DD4890B1BCCE9A4005AF9BB /* HeroCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4890A1BCCE9A4005AF9BB /* HeroCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -168,6 +175,18 @@
 		0D66FBB21BD1214E00A42CEC /* SuggestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestTableViewCell.m; sourceTree = "<group>"; };
 		0D66FBB71BD133B800A42CEC /* Equip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Equip.h; sourceTree = "<group>"; };
 		0D66FBB81BD133B800A42CEC /* Equip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Equip.m; sourceTree = "<group>"; };
+		0D69E6C01BD1F58C00AFAC72 /* TalentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalentViewController.h; sourceTree = "<group>"; };
+		0D69E6C11BD1F58C00AFAC72 /* TalentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalentViewController.m; sourceTree = "<group>"; };
+		0D69E6C31BD1FFAE00AFAC72 /* downloadImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downloadImg.png; sourceTree = "<group>"; };
+		0D69E6C51BD2013100AFAC72 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		0D69E6C71BD2217C00AFAC72 /* FWTFmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWTFmodel.h; sourceTree = "<group>"; };
+		0D69E6C81BD2217C00AFAC72 /* FWTFmodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWTFmodel.m; sourceTree = "<group>"; };
+		0D69E6CA1BD272B300AFAC72 /* ZoomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomScrollView.h; sourceTree = "<group>"; };
+		0D69E6CB1BD272B300AFAC72 /* ZoomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomScrollView.m; sourceTree = "<group>"; };
+		0D69E6CD1BD2903A00AFAC72 /* CompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
+		0D69E6CE1BD2903A00AFAC72 /* CompareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompareViewController.m; sourceTree = "<group>"; };
+		0D69E6D01BD29CBD00AFAC72 /* ChooseTwoHeroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseTwoHeroView.h; sourceTree = "<group>"; };
+		0D69E6D11BD29CBD00AFAC72 /* ChooseTwoHeroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseTwoHeroView.m; sourceTree = "<group>"; };
 		0DD489031BCCE032005AF9BB /* HeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroViewController.h; sourceTree = "<group>"; };
 		0DD489041BCCE032005AF9BB /* HeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroViewController.m; sourceTree = "<group>"; };
 		0DD489061BCCE194005AF9BB /* FreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeView.h; sourceTree = "<group>"; };
@@ -291,6 +310,8 @@
 		0D4830251BCB92D90042CFA0 /* 归档 */ = {
 			isa = PBXGroup;
 			children = (
+				0D69E6C51BD2013100AFAC72 /* download.png */,
+				0D69E6C31BD1FFAE00AFAC72 /* downloadImg.png */,
 				0D4830261BCB92D90042CFA0 /* 1.png */,
 				0D4830271BCB92D90042CFA0 /* 2.png */,
 				0D4830281BCB92D90042CFA0 /* 3.png */,
@@ -413,6 +434,10 @@
 				0DD489041BCCE032005AF9BB /* HeroViewController.m */,
 				0DD489181BCE2F83005AF9BB /* HeroInformationViewController.h */,
 				0DD489191BCE2F83005AF9BB /* HeroInformationViewController.m */,
+				0D69E6C01BD1F58C00AFAC72 /* TalentViewController.h */,
+				0D69E6C11BD1F58C00AFAC72 /* TalentViewController.m */,
+				0D69E6CD1BD2903A00AFAC72 /* CompareViewController.h */,
+				0D69E6CE1BD2903A00AFAC72 /* CompareViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -428,6 +453,8 @@
 				0DD489231BCE5532005AF9BB /* SkillModel.m */,
 				0D66FBB71BD133B800A42CEC /* Equip.h */,
 				0D66FBB81BD133B800A42CEC /* Equip.m */,
+				0D69E6C71BD2217C00AFAC72 /* FWTFmodel.h */,
+				0D69E6C81BD2217C00AFAC72 /* FWTFmodel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -435,6 +462,8 @@
 		0D4830791BCB9FBD0042CFA0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				0D69E6CA1BD272B300AFAC72 /* ZoomScrollView.h */,
+				0D69E6CB1BD272B300AFAC72 /* ZoomScrollView.m */,
 				0D66FBA61BD0F30300A42CEC /* HeroDataCell.h */,
 				0D66FBA51BD0F30300A42CEC /* HeroDataCell.m */,
 				0DD489061BCCE194005AF9BB /* FreeView.h */,
@@ -461,6 +490,8 @@
 				0D66FBAF1BD11D2D00A42CEC /* EquipmentView.m */,
 				0D66FBB11BD1214E00A42CEC /* SuggestTableViewCell.h */,
 				0D66FBB21BD1214E00A42CEC /* SuggestTableViewCell.m */,
+				0D69E6D01BD29CBD00AFAC72 /* ChooseTwoHeroView.h */,
+				0D69E6D11BD29CBD00AFAC72 /* ChooseTwoHeroView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -642,7 +673,9 @@
 				0D48305A1BCB92D90042CFA0 /* 4.png in Resources */,
 				0D4830571BCB92D90042CFA0 /* 1.png in Resources */,
 				0D4830581BCB92D90042CFA0 /* 2.png in Resources */,
+				0D69E6C61BD2013100AFAC72 /* download.png in Resources */,
 				0D48305C1BCB92D90042CFA0 /* main.jpg in Resources */,
+				0D69E6C41BD1FFAE00AFAC72 /* downloadImg.png in Resources */,
 				0D4830591BCB92D90042CFA0 /* 3.png in Resources */,
 				0D482FFF1BCB914B0042CFA0 /* Assets.xcassets in Resources */,
 				0D48305E1BCB92D90042CFA0 /* same.png in Resources */,
@@ -675,10 +708,12 @@
 			files = (
 				0D66FBB91BD133B800A42CEC /* Equip.m in Sources */,
 				0D48306E1BCB92D90042CFA0 /* UIImageView+HighlightedWebCache.m in Sources */,
+				0D69E6D21BD29CBD00AFAC72 /* ChooseTwoHeroView.m in Sources */,
 				0D66FBAA1BD118A900A42CEC /* HeroBackgroundTableViewCell.m in Sources */,
 				0D48306C1BCB92D90042CFA0 /* UIImage+MultiFormat.m in Sources */,
 				0D4830711BCB92D90042CFA0 /* UIColor+AddColor.m in Sources */,
 				0DD489211BCE4526005AF9BB /* HeroInformation.m in Sources */,
+				0D69E6CC1BD272B300AFAC72 /* ZoomScrollView.m in Sources */,
 				0D4830671BCB92D90042CFA0 /* SDWebImageDownloaderOperation.m in Sources */,
 				0D4830601BCB92D90042CFA0 /* NetHandler.m in Sources */,
 				0D4830641BCB92D90042CFA0 /* SDWebImageCompat.m in Sources */,
@@ -688,6 +723,7 @@
 				0D4830691BCB92D90042CFA0 /* SDWebImagePrefetcher.m in Sources */,
 				0D66FB9B1BD0D4E200A42CEC /* BestPartnersCellTableViewCell.m in Sources */,
 				0D482FFA1BCB914B0042CFA0 /* ViewController.m in Sources */,
+				0D69E6CF1BD2903A00AFAC72 /* CompareViewController.m in Sources */,
 				0D482FF71BCB914B0042CFA0 /* AppDelegate.m in Sources */,
 				0DF53E4D1BCCD8EB005AEB86 /* BaseViewController.m in Sources */,
 				0D48306D1BCB92D90042CFA0 /* UIImage+WebP.m in Sources */,
@@ -695,6 +731,7 @@
 				0D4830841BCBA07F0042CFA0 /* MainViewController.m in Sources */,
 				0D48306F1BCB92D90042CFA0 /* UIImageView+WebCache.m in Sources */,
 				0D66FBB31BD1214E00A42CEC /* SuggestTableViewCell.m in Sources */,
+				0D69E6C91BD2217C00AFAC72 /* FWTFmodel.m in Sources */,
 				0D66FBA41BD0F20700A42CEC /* HeroDataTableViewCell.m in Sources */,
 				0DD4891A1BCE2F83005AF9BB /* HeroInformationViewController.m in Sources */,
 				0D66FB9E1BD0E67F00A42CEC /* BestEnemiesTableViewCell.m in Sources */,
@@ -705,6 +742,7 @@
 				0D66FBA71BD0F30300A42CEC /* HeroDataCell.m in Sources */,
 				0D4830871BCBA3490042CFA0 /* MainView.m in Sources */,
 				0D4830611BCB92D90042CFA0 /* MKAnnotationView+WebCache.m in Sources */,
+				0D69E6C21BD1F58C00AFAC72 /* TalentViewController.m in Sources */,
 				0DD489241BCE5532005AF9BB /* SkillModel.m in Sources */,
 				0D4830621BCB92D90042CFA0 /* NSData+ImageContentType.m in Sources */,
 				0DD489081BCCE194005AF9BB /* FreeView.m in Sources */,

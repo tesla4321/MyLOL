@@ -15,6 +15,10 @@
 @property(nonatomic,strong)UILabel *priceLabel;
 @property(nonatomic,strong)UILabel *characterLabel;
 
+@property(nonatomic,strong)UIButton *compareHeroBtton;
+@property(nonatomic,strong)UIButton *talentButton;
+
+
 
 
 

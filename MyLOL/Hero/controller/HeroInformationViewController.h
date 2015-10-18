@@ -10,6 +10,7 @@
 #import "HeroInformation.h"
 #import "DataView.h"
 #import "EquipmentView.h"
+#import "FWTFmodel.h"
 @interface HeroInformationViewController : BaseViewController
 
 @property(nonatomic,strong)HeroInformation *heroInfomation;
@@ -17,5 +18,8 @@
 @property(nonatomic,strong)DataView *dataView;
 
 @property(nonatomic,strong)EquipmentView *equipview;
+
+@property(nonatomic,strong)FWTFmodel *fwModel;
+
 
 @end

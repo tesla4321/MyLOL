@@ -13,5 +13,7 @@
 
 @property(nonatomic,strong)UIImageView *topView;
 @property(nonatomic,strong)UIImageView *bottomView;
+@property(nonatomic,strong)UIButton *backBtn;
+
 
 @end
