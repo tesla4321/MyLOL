@@ -15,7 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _topView = [[UIImageView alloc]initWithFrame:(CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/8))];
+    _topView = [[UIImageView alloc]initWithFrame:(CGRectMake(0, 0, self.view.bounds.size.width, KScreenHeight/8))];
     _topView.image = [UIImage imageNamed:@"main.jpg"];
     _topView.userInteractionEnabled = 1;
     [self.view addSubview:_topView];

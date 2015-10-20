@@ -60,6 +60,16 @@
 		0D69E6CC1BD272B300AFAC72 /* ZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D69E6CB1BD272B300AFAC72 /* ZoomScrollView.m */; settings = {ASSET_TAGS = (); }; };
 		0D69E6CF1BD2903A00AFAC72 /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D69E6CE1BD2903A00AFAC72 /* CompareViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0D69E6D21BD29CBD00AFAC72 /* ChooseTwoHeroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D69E6D11BD29CBD00AFAC72 /* ChooseTwoHeroView.m */; settings = {ASSET_TAGS = (); }; };
+		0D7514031BD3CF6B00719630 /* versus.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7514021BD3CF6A00719630 /* versus.png */; settings = {ASSET_TAGS = (); }; };
+		0D7514051BD3D01C00719630 /* add.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7514041BD3D01C00719630 /* add.jpg */; settings = {ASSET_TAGS = (); }; };
+		0D7514071BD3D56400719630 /* versus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7514061BD3D56400719630 /* versus2.png */; settings = {ASSET_TAGS = (); }; };
+		0D7514091BD3D6F600719630 /* versus3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D7514081BD3D6F600719630 /* versus3.png */; settings = {ASSET_TAGS = (); }; };
+		0D75140B1BD3D80900719630 /* versus4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D75140A1BD3D80900719630 /* versus4.png */; settings = {ASSET_TAGS = (); }; };
+		0D75140E1BD3E8A000719630 /* HeroCompareInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75140D1BD3E8A000719630 /* HeroCompareInfoView.m */; settings = {ASSET_TAGS = (); }; };
+		0D7514111BD4D08900719630 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7514101BD4D08900719630 /* UIView+Frame.m */; settings = {ASSET_TAGS = (); }; };
+		0D7514141BD4E0A100719630 /* ChooseHeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7514131BD4E0A100719630 /* ChooseHeroViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0D7514171BD50D0900719630 /* HeroCompareSkillView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7514161BD50D0900719630 /* HeroCompareSkillView.m */; settings = {ASSET_TAGS = (); }; };
+		0D75141A1BD50F1400719630 /* SkillCompareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7514191BD50F1400719630 /* SkillCompareTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		0DD489051BCCE032005AF9BB /* HeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD489041BCCE032005AF9BB /* HeroViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0DD489081BCCE194005AF9BB /* FreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD489071BCCE194005AF9BB /* FreeView.m */; settings = {ASSET_TAGS = (); }; };
 		0DD4890B1BCCE9A4005AF9BB /* HeroCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4890A1BCCE9A4005AF9BB /* HeroCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -187,6 +197,21 @@
 		0D69E6CE1BD2903A00AFAC72 /* CompareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompareViewController.m; sourceTree = "<group>"; };
 		0D69E6D01BD29CBD00AFAC72 /* ChooseTwoHeroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseTwoHeroView.h; sourceTree = "<group>"; };
 		0D69E6D11BD29CBD00AFAC72 /* ChooseTwoHeroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseTwoHeroView.m; sourceTree = "<group>"; };
+		0D7514021BD3CF6A00719630 /* versus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versus.png; sourceTree = "<group>"; };
+		0D7514041BD3D01C00719630 /* add.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = add.jpg; sourceTree = "<group>"; };
+		0D7514061BD3D56400719630 /* versus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = versus2.png; path = ../versus2.png; sourceTree = "<group>"; };
+		0D7514081BD3D6F600719630 /* versus3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versus3.png; sourceTree = "<group>"; };
+		0D75140A1BD3D80900719630 /* versus4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = versus4.png; sourceTree = "<group>"; };
+		0D75140C1BD3E8A000719630 /* HeroCompareInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCompareInfoView.h; sourceTree = "<group>"; };
+		0D75140D1BD3E8A000719630 /* HeroCompareInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCompareInfoView.m; sourceTree = "<group>"; };
+		0D75140F1BD4D08900719630 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		0D7514101BD4D08900719630 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		0D7514121BD4E0A100719630 /* ChooseHeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseHeroViewController.h; sourceTree = "<group>"; };
+		0D7514131BD4E0A100719630 /* ChooseHeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseHeroViewController.m; sourceTree = "<group>"; };
+		0D7514151BD50D0900719630 /* HeroCompareSkillView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCompareSkillView.h; sourceTree = "<group>"; };
+		0D7514161BD50D0900719630 /* HeroCompareSkillView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCompareSkillView.m; sourceTree = "<group>"; };
+		0D7514181BD50F1400719630 /* SkillCompareTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillCompareTableViewCell.h; sourceTree = "<group>"; };
+		0D7514191BD50F1400719630 /* SkillCompareTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillCompareTableViewCell.m; sourceTree = "<group>"; };
 		0DD489031BCCE032005AF9BB /* HeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroViewController.h; sourceTree = "<group>"; };
 		0DD489041BCCE032005AF9BB /* HeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroViewController.m; sourceTree = "<group>"; };
 		0DD489061BCCE194005AF9BB /* FreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeView.h; sourceTree = "<group>"; };
@@ -310,6 +335,13 @@
 		0D4830251BCB92D90042CFA0 /* 归档 */ = {
 			isa = PBXGroup;
 			children = (
+				0D75140F1BD4D08900719630 /* UIView+Frame.h */,
+				0D7514101BD4D08900719630 /* UIView+Frame.m */,
+				0D75140A1BD3D80900719630 /* versus4.png */,
+				0D7514081BD3D6F600719630 /* versus3.png */,
+				0D7514061BD3D56400719630 /* versus2.png */,
+				0D7514041BD3D01C00719630 /* add.jpg */,
+				0D7514021BD3CF6A00719630 /* versus.png */,
 				0D69E6C51BD2013100AFAC72 /* download.png */,
 				0D69E6C31BD1FFAE00AFAC72 /* downloadImg.png */,
 				0D4830261BCB92D90042CFA0 /* 1.png */,
@@ -438,6 +470,8 @@
 				0D69E6C11BD1F58C00AFAC72 /* TalentViewController.m */,
 				0D69E6CD1BD2903A00AFAC72 /* CompareViewController.h */,
 				0D69E6CE1BD2903A00AFAC72 /* CompareViewController.m */,
+				0D7514121BD4E0A100719630 /* ChooseHeroViewController.h */,
+				0D7514131BD4E0A100719630 /* ChooseHeroViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -462,6 +496,8 @@
 		0D4830791BCB9FBD0042CFA0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				0D75140C1BD3E8A000719630 /* HeroCompareInfoView.h */,
+				0D75140D1BD3E8A000719630 /* HeroCompareInfoView.m */,
 				0D69E6CA1BD272B300AFAC72 /* ZoomScrollView.h */,
 				0D69E6CB1BD272B300AFAC72 /* ZoomScrollView.m */,
 				0D66FBA61BD0F30300A42CEC /* HeroDataCell.h */,
@@ -492,6 +528,10 @@
 				0D66FBB21BD1214E00A42CEC /* SuggestTableViewCell.m */,
 				0D69E6D01BD29CBD00AFAC72 /* ChooseTwoHeroView.h */,
 				0D69E6D11BD29CBD00AFAC72 /* ChooseTwoHeroView.m */,
+				0D7514151BD50D0900719630 /* HeroCompareSkillView.h */,
+				0D7514161BD50D0900719630 /* HeroCompareSkillView.m */,
+				0D7514181BD50F1400719630 /* SkillCompareTableViewCell.h */,
+				0D7514191BD50F1400719630 /* SkillCompareTableViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -671,17 +711,22 @@
 				0D4830021BCB914B0042CFA0 /* LaunchScreen.storyboard in Resources */,
 				0D48305F1BCB92D90042CFA0 /* small.png in Resources */,
 				0D48305A1BCB92D90042CFA0 /* 4.png in Resources */,
+				0D7514031BD3CF6B00719630 /* versus.png in Resources */,
+				0D75140B1BD3D80900719630 /* versus4.png in Resources */,
 				0D4830571BCB92D90042CFA0 /* 1.png in Resources */,
 				0D4830581BCB92D90042CFA0 /* 2.png in Resources */,
 				0D69E6C61BD2013100AFAC72 /* download.png in Resources */,
 				0D48305C1BCB92D90042CFA0 /* main.jpg in Resources */,
 				0D69E6C41BD1FFAE00AFAC72 /* downloadImg.png in Resources */,
 				0D4830591BCB92D90042CFA0 /* 3.png in Resources */,
+				0D7514071BD3D56400719630 /* versus2.png in Resources */,
 				0D482FFF1BCB914B0042CFA0 /* Assets.xcassets in Resources */,
 				0D48305E1BCB92D90042CFA0 /* same.png in Resources */,
 				0D48305B1BCB92D90042CFA0 /* huise.jpg in Resources */,
 				0D482FFD1BCB914B0042CFA0 /* Main.storyboard in Resources */,
 				0D48305D1BCB92D90042CFA0 /* main2.jpg in Resources */,
+				0D7514051BD3D01C00719630 /* add.jpg in Resources */,
+				0D7514091BD3D6F600719630 /* versus3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +759,7 @@
 				0D4830711BCB92D90042CFA0 /* UIColor+AddColor.m in Sources */,
 				0DD489211BCE4526005AF9BB /* HeroInformation.m in Sources */,
 				0D69E6CC1BD272B300AFAC72 /* ZoomScrollView.m in Sources */,
+				0D7514111BD4D08900719630 /* UIView+Frame.m in Sources */,
 				0D4830671BCB92D90042CFA0 /* SDWebImageDownloaderOperation.m in Sources */,
 				0D4830601BCB92D90042CFA0 /* NetHandler.m in Sources */,
 				0D4830641BCB92D90042CFA0 /* SDWebImageCompat.m in Sources */,
@@ -723,11 +769,14 @@
 				0D4830691BCB92D90042CFA0 /* SDWebImagePrefetcher.m in Sources */,
 				0D66FB9B1BD0D4E200A42CEC /* BestPartnersCellTableViewCell.m in Sources */,
 				0D482FFA1BCB914B0042CFA0 /* ViewController.m in Sources */,
+				0D75141A1BD50F1400719630 /* SkillCompareTableViewCell.m in Sources */,
 				0D69E6CF1BD2903A00AFAC72 /* CompareViewController.m in Sources */,
 				0D482FF71BCB914B0042CFA0 /* AppDelegate.m in Sources */,
+				0D75140E1BD3E8A000719630 /* HeroCompareInfoView.m in Sources */,
 				0DF53E4D1BCCD8EB005AEB86 /* BaseViewController.m in Sources */,
 				0D48306D1BCB92D90042CFA0 /* UIImage+WebP.m in Sources */,
 				0DD4892D1BCE88CF005AF9BB /* SkillTableViewCell.m in Sources */,
+				0D7514171BD50D0900719630 /* HeroCompareSkillView.m in Sources */,
 				0D4830841BCBA07F0042CFA0 /* MainViewController.m in Sources */,
 				0D48306F1BCB92D90042CFA0 /* UIImageView+WebCache.m in Sources */,
 				0D66FBB31BD1214E00A42CEC /* SuggestTableViewCell.m in Sources */,
@@ -753,6 +802,7 @@
 				0D66FBA11BD0EA0800A42CEC /* TipsTableViewCell.m in Sources */,
 				0DD489051BCCE032005AF9BB /* HeroViewController.m in Sources */,
 				0D4830631BCB92D90042CFA0 /* SDImageCache.m in Sources */,
+				0D7514141BD4E0A100719630 /* ChooseHeroViewController.m in Sources */,
 				0DD4890E1BCCFA8A005AF9BB /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

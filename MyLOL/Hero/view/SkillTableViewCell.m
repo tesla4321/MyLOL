@@ -201,15 +201,12 @@
 
 - (void)setHeroInfo:(HeroInformation *)heroInfo{
     _heroInfo = heroInfo;
-//    NSLog(@"%@haha",_heroInfo.hero.cnName);
+
     
     for (NSInteger i = 0; i < 5; i ++) {
             [_btnArray[i] sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.lolbox.duowan.com/abilities/%@_%@_64x64.png?v=10&OSType=iOS7.0.3", _heroInfo.hero.enName,kArray[i]]] forState:(UIControlStateNormal) placeholderImage:[UIImage imageNamed:@"1"]];
         
     }
-//    for (NSInteger i = 0; i < 5; i ++) {
-//        [_btnArray[i] addTarget:self action:@selector(switchSkill:) forControlEvents:(UIControlEventTouchUpInside)];
-//    }
 
     
     _skillDescriptionLabelI.text = _heroInfo.Skill_B.description1;

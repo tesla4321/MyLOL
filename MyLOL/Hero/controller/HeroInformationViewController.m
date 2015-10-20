@@ -71,8 +71,12 @@
 - (void)comparehero{
     
     CompareViewController *compareVC = [[CompareViewController alloc]init];
+    compareVC.heroInfo = _heroInfomation;
     [self.navigationController pushViewController:compareVC animated:1];
 }
+
+
+
 
 
 

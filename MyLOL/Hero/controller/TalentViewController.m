@@ -168,7 +168,7 @@ static BOOL down = 0;
 
 - (void)imageSavedToPhotosAlbum:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
-    NSString *message = @"呵呵";
+    NSString *message = @"保存失败";
     if (!error) {
         message = @"成功保存到相册";
     }else
