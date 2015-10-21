@@ -9,6 +9,9 @@
 #import "MainViewController.h"
 #import "MainView.h"
 #import "HeroViewController.h"
+#import "LOLWiKiViewController.h"
+#import "NewsViewController.h"
+#import "TwoButtonViewController.h"
 @interface MainViewController ()
 @property(nonatomic,strong)UIImageView *imageView;
 @property(nonatomic,strong)UIImageView *backImageView;
@@ -18,6 +21,7 @@
 @implementation MainViewController
 
 - (void)viewDidLoad {
+    [NSThread sleepForTimeInterval:2];
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = 1;
     
@@ -71,11 +75,14 @@
 
 
 - (void)equipAction:(UIButton *)button{
+    NewsViewController *newsVC = [[NewsViewController alloc]init];
+    [self.navigationController pushViewController:newsVC animated:1];
     
 }
 
 - (void)informationAction:(UIButton *)button{
-    
+    TwoButtonViewController *twobtnVC = [[TwoButtonViewController alloc]init];
+    [self.navigationController pushViewController:twobtnVC animated:1];
 }
 
 

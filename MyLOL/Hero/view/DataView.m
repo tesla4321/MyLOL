@@ -57,7 +57,9 @@
     }
     if (indexPath.row == 1) {
         NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:18]};
-        
+        if (self.heroInformation.like.count == 0) {
+            return 80;
+        }else{
         
         CGRect rect1 = [self.heroInformation.like[0][@"des"] boundingRectWithSize:CGSizeMake(self.bounds.size.width * 5/ 6 - 10, NSIntegerMax) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil];
         CGRect rect = [self.heroInformation.like[1][@"des"] boundingRectWithSize:CGSizeMake(self.bounds.size.width * 5/ 6  - 10, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil];
@@ -66,13 +68,16 @@
         
 //        NSLog(@"%f + %f = %f",rect.size.height,rect1.size.height,height);
         return height + 80;
+        }
         
         
     }
     
     if (indexPath.row == 2) {
         NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:18]};
-        
+        if (self.heroInformation.hate.count == 0) {
+            return 80;
+        }else{
         
         CGRect rect1 = [self.heroInformation.hate[0][@"des"] boundingRectWithSize:CGSizeMake(self.bounds.size.width * 5/ 6 - 10, NSIntegerMax) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil];
         CGRect rect = [self.heroInformation.hate[1][@"des"] boundingRectWithSize:CGSizeMake(self.bounds.size.width * 5/ 6  - 10, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil];
@@ -81,6 +86,7 @@
         
         //        NSLog(@"%f + %f = %f",rect.size.height,rect1.size.height,height);
         return height + 80;
+        }
 
     }
     

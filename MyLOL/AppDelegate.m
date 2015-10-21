@@ -10,6 +10,8 @@
 #import "MainViewController.h"
 @interface AppDelegate ()
 
+@property(nonatomic,strong)MainViewController *mainVC;
+
 @end
 
 @implementation AppDelegate
@@ -20,9 +22,9 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
-    MainViewController *main = [[MainViewController alloc]init];
+    _mainVC = [[MainViewController alloc]init];
     
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:main];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:_mainVC];
     
     self.window.rootViewController = navi;
     return YES;
@@ -39,6 +41,7 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
+    [_mainVC viewWillAppear:1];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 

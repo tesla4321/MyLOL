@@ -47,7 +47,7 @@
         [self.hero addSubview:self.heroLabel];
 
         _equipLabel = [[UILabel alloc]initWithFrame:(CGRectMake(0, _hero.bounds.size.height - 20, _equip.bounds.size.width, 20))];
-        _equipLabel.text = @"装备";
+        _equipLabel.text = @"资讯";
         _equipLabel.textColor = [UIColor whiteColor];
         _equipLabel.textAlignment = NSTextAlignmentCenter;
         _equipLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"huise.jpg"]];

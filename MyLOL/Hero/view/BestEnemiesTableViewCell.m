@@ -13,6 +13,9 @@
 
 - (void)setHeroInfo:(HeroInformation *)heroInfo{
     _heroInfo = heroInfo;
+    if (_heroInfo.hate.count == 0) {
+        
+    }else{
     [_enemyImage1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.lolbox.duowan.com/champions/%@_120x120.jpg",_heroInfo.hate[0][@"partner"]]] placeholderImage:[UIImage imageNamed:@"1"]];
     [_enemyImage2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.lolbox.duowan.com/champions/%@_120x120.jpg",_heroInfo.hate[1][@"partner"]]] placeholderImage:[UIImage imageNamed:@"1"]];
     _enemyL1.text = _heroInfo.hate[0][@"des"];
@@ -20,6 +23,7 @@
     
     
     NSLog(@"%f",_enemyL2.bounds.size.height);
+    }
 }
 
 

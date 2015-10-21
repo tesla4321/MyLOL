@@ -23,6 +23,7 @@
         _tabelView.delegate = self;
         _tabelView.dataSource = self;
         _tabelView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tabelView.backgroundColor = KImageColor;
         [self addSubview:_tabelView];
     }
     return self;

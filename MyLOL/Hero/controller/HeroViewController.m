@@ -19,8 +19,10 @@ static NSMutableArray *allarry ;
 @interface HeroViewController ()<UISearchBarDelegate,UICollectionViewDelegate>
 @property(nonatomic,strong)FreeView *freeView;
 @property(nonatomic,strong)FreeView *allView;
+@property(nonatomic,strong)FreeView *myHeroView;
 @property(nonatomic,strong)UISearchBar *searchBar;
 @property(nonatomic,strong)NSMutableArray *lastArr;
+@property(nonatomic,strong)UIActivityIndicatorView *activityView;
 //@property(nonatomic,strong)FreeView *freeView;
 
 
@@ -39,6 +41,20 @@ static NSMutableArray *allarry ;
     
     [seg addTarget:self action:@selector(switchView:) forControlEvents:(UIControlEventValueChanged)];
     [self.view addSubview:seg];
+    
+    _activityView = [[UIActivityIndicatorView alloc]initWithFrame:(CGRectMake(KScreenWidth/2, KScreenHeight * 2/3, 30, 30))];
+    
+    _activityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+    
+    _activityView.backgroundColor = [UIColor yellowColor];
+    
+    _myHeroView = [[FreeView alloc]initWithFrame:(CGRectMake(0, 30, seg.bounds.size.width, self.view.bounds.size.height - 30))];
+    _myHeroView.tag = 1001;
+    _myHeroView.freeCollection.delegate = self;
+    _myHeroView.backgroundColor = KImageColor;
+    [self netparse3];
+    [self.bottomView addSubview:_myHeroView];
+    [_myHeroView addSubview:_activityView];
     
     
     _freeView = [[FreeView alloc]initWithFrame:(CGRectMake(0, 30, seg.bounds.size.width, self.view.bounds.size.height - 30))];
@@ -66,6 +82,12 @@ static NSMutableArray *allarry ;
     [self.bottomView addSubview:_allView];
     [self.bottomView addSubview:_searchBar];
     [self.bottomView addSubview:_freeView];
+    
+    [_allView addSubview:_activityView];
+    
+    [_freeView addSubview:_activityView];
+    
+    [_activityView startAnimating];
 
     
     // Do any additional setup after loading the view.
@@ -120,6 +142,7 @@ static NSMutableArray *allarry ;
         dispatch_async(dispatch_get_main_queue(), ^{
             _freeView.arr = array;
         });
+        [_activityView stopAnimating];
         
     }];
 }
@@ -141,8 +164,37 @@ static NSMutableArray *allarry ;
             _allView.arr = array;
             allarry = array;
         });
+        [_activityView stopAnimating];
         
     }];
+}
+
+
+- (void)netparse3{
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"isLogin"]) {
+    NSString *url = [NSString stringWithFormat:@"http://lolbox.duowan.com/phone/apiMyHeroes.php?serverName=%@&OSType=iOS8.1.2&target=%@&v=70",[[[NSUserDefaults standardUserDefaults] valueForKey:@"server"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],[[[NSUserDefaults standardUserDefaults] valueForKey:@"name"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSMutableArray *array = [NSMutableArray array];
+        
+        NSLog(@"%@",url);
+//        NSLog(@"%@",[[NSUserDefaults standardUserDefaults] valueForKey:@"server"]);
+    [NetHandler  getDataWithUrl:url completion:^(NSData *data) {
+        NSDictionary *rootdic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            for (NSDictionary *dic in rootdic[@"myHeroes"]) {
+                Hero *hero = [[Hero alloc]init];
+                [hero setValuesForKeysWithDictionary:dic];
+                [array addObject:hero];
+            }
+//            NSLog(@"%ld",array.count);
+        });
+        dispatch_async(dispatch_get_main_queue(), ^{
+            _myHeroView.arr = array;
+        });
+        [_activityView stopAnimating];
+        
+    }];
+        
+    }
 }
 
 

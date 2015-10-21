@@ -34,7 +34,7 @@
     [seg addTarget:self action:@selector(changeCompare:) forControlEvents:(UIControlEventValueChanged)];
     [self.bottomView addSubview:seg];
     
-    _heroCompareSkillView = [[HeroCompareSkillView alloc]initWithFrame:(CGRectMake(0, seg.frame.origin.y + 30, KScreenWidth, self.bottomView.bounds.size.height - _chooseView.bounds.size.height - 30 - 20 - 30))];
+    _heroCompareSkillView = [[HeroCompareSkillView alloc]initWithFrame:(CGRectMake(0, seg.frame.origin.y + 30, KScreenWidth, self.bottomView.bounds.size.height - _chooseView.bounds.size.height - 30 - 20))];
     _heroCompareSkillView.backgroundColor = KImageColor;
     _heroCompareSkillView.heroInfoL = _heroInfo;
     

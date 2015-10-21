@@ -13,6 +13,9 @@
 
 - (void)setHeroInfo:(HeroInformation *)heroInfo{
     _heroInfo = heroInfo;
+    if (_heroInfo.like.count == 0) {
+        
+    }else{
     [_partnerImage1 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.lolbox.duowan.com/champions/%@_120x120.jpg",_heroInfo.like[0][@"partner"]]] placeholderImage:[UIImage imageNamed:@"1"]];
     [_partnerImage2 sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://img.lolbox.duowan.com/champions/%@_120x120.jpg",_heroInfo.like[1][@"partner"]]] placeholderImage:[UIImage imageNamed:@"1"]];
     _partnerL1.text = _heroInfo.like[0][@"des"];
@@ -20,6 +23,7 @@
     
     
     NSLog(@"%f",_partnerL2.bounds.size.height);
+    }
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
