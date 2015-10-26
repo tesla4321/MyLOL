@@ -10,6 +10,7 @@
 #import "NetHandler.h"
 #import "LOLWiKiView.h"
 #import "UIImageView+WebCache.h"
+#import "SkillCollectionViewController.h"
 @interface LOLWiKiViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSMutableArray *arr;
 @property(nonatomic,strong)UITableView *tableview;
@@ -50,10 +51,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:1];
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *reUseIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reUseIdentifier];
@@ -71,6 +68,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _arr.count;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 4) {
+        SkillCollectionViewController *skillVC = [[SkillCollectionViewController alloc]init];
+        [self.navigationController pushViewController:skillVC animated:1];
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:1];
 }
 
 /*

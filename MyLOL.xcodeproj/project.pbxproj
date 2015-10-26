@@ -84,6 +84,10 @@
 		0D99C5191BD7CCB800ACFA92 /* Myhero.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D99C5181BD7CCB800ACFA92 /* Myhero.m */; settings = {ASSET_TAGS = (); }; };
 		0D99C51B1BD7DB4700ACFA92 /* comic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D99C51A1BD7DB4600ACFA92 /* comic.jpg */; settings = {ASSET_TAGS = (); }; };
 		0D99C51F1BD7DEC100ACFA92 /* caitlyn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D99C51E1BD7DEC100ACFA92 /* caitlyn.jpg */; settings = {ASSET_TAGS = (); }; };
+		0D99C5221BD8741600ACFA92 /* SkillCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D99C5211BD8741600ACFA92 /* SkillCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0D99C5251BD87ACE00ACFA92 /* HeroSkillCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D99C5241BD87ACE00ACFA92 /* HeroSkillCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		0D99C5281BD87D3000ACFA92 /* HeroSkillModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D99C5271BD87D3000ACFA92 /* HeroSkillModel.m */; settings = {ASSET_TAGS = (); }; };
+		0D99C52B1BD8DA5100ACFA92 /* SkillDesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D99C52A1BD8DA5100ACFA92 /* SkillDesViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0DD489051BCCE032005AF9BB /* HeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD489041BCCE032005AF9BB /* HeroViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0DD489081BCCE194005AF9BB /* FreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD489071BCCE194005AF9BB /* FreeView.m */; settings = {ASSET_TAGS = (); }; };
 		0DD4890B1BCCE9A4005AF9BB /* HeroCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD4890A1BCCE9A4005AF9BB /* HeroCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -251,6 +255,14 @@
 		0D99C5181BD7CCB800ACFA92 /* Myhero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Myhero.m; sourceTree = "<group>"; };
 		0D99C51A1BD7DB4600ACFA92 /* comic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = comic.jpg; sourceTree = "<group>"; };
 		0D99C51E1BD7DEC100ACFA92 /* caitlyn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caitlyn.jpg; sourceTree = "<group>"; };
+		0D99C5201BD8741600ACFA92 /* SkillCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillCollectionViewController.h; sourceTree = "<group>"; };
+		0D99C5211BD8741600ACFA92 /* SkillCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillCollectionViewController.m; sourceTree = "<group>"; };
+		0D99C5231BD87ACE00ACFA92 /* HeroSkillCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkillCollectionViewCell.h; sourceTree = "<group>"; };
+		0D99C5241BD87ACE00ACFA92 /* HeroSkillCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroSkillCollectionViewCell.m; sourceTree = "<group>"; };
+		0D99C5261BD87D3000ACFA92 /* HeroSkillModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkillModel.h; sourceTree = "<group>"; };
+		0D99C5271BD87D3000ACFA92 /* HeroSkillModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroSkillModel.m; sourceTree = "<group>"; };
+		0D99C5291BD8DA5100ACFA92 /* SkillDesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillDesViewController.h; sourceTree = "<group>"; };
+		0D99C52A1BD8DA5100ACFA92 /* SkillDesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillDesViewController.m; sourceTree = "<group>"; };
 		0DD489031BCCE032005AF9BB /* HeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroViewController.h; sourceTree = "<group>"; };
 		0DD489041BCCE032005AF9BB /* HeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroViewController.m; sourceTree = "<group>"; };
 		0DD489061BCCE194005AF9BB /* FreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeView.h; sourceTree = "<group>"; };
@@ -609,6 +621,12 @@
 				0D99C50F1BD7815D00ACFA92 /* LoginViewController.m */,
 				0D99C5141BD799F900ACFA92 /* WebViewViewController.h */,
 				0D99C5151BD799F900ACFA92 /* WebViewViewController.m */,
+				0D99C5201BD8741600ACFA92 /* SkillCollectionViewController.h */,
+				0D99C5211BD8741600ACFA92 /* SkillCollectionViewController.m */,
+				0D99C5231BD87ACE00ACFA92 /* HeroSkillCollectionViewCell.h */,
+				0D99C5241BD87ACE00ACFA92 /* HeroSkillCollectionViewCell.m */,
+				0D99C5291BD8DA5100ACFA92 /* SkillDesViewController.h */,
+				0D99C52A1BD8DA5100ACFA92 /* SkillDesViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -620,6 +638,8 @@
 				0D7514221BD65DAD00719630 /* LOLWiKiView.m */,
 				0D99C5111BD7891500ACFA92 /* ServerModel.h */,
 				0D99C5121BD7891500ACFA92 /* ServerModel.m */,
+				0D99C5261BD87D3000ACFA92 /* HeroSkillModel.h */,
+				0D99C5271BD87D3000ACFA92 /* HeroSkillModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -733,7 +753,6 @@
 				TargetAttributes = {
 					0D482FEE1BCB914A0042CFA0 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = W3ZL3528H5;
 					};
 					0D4830071BCB914B0042CFA0 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -855,9 +874,11 @@
 				0D66FBB31BD1214E00A42CEC /* SuggestTableViewCell.m in Sources */,
 				0D69E6C91BD2217C00AFAC72 /* FWTFmodel.m in Sources */,
 				0D99C4FE1BD6895100ACFA92 /* HeaderlineModel.m in Sources */,
+				0D99C5281BD87D3000ACFA92 /* HeroSkillModel.m in Sources */,
 				0D66FBA41BD0F20700A42CEC /* HeroDataTableViewCell.m in Sources */,
 				0DD4891A1BCE2F83005AF9BB /* HeroInformationViewController.m in Sources */,
 				0D66FB9E1BD0E67F00A42CEC /* BestEnemiesTableViewCell.m in Sources */,
+				0D99C5251BD87ACE00ACFA92 /* HeroSkillCollectionViewCell.m in Sources */,
 				0D66FBB01BD11D2D00A42CEC /* EquipmentView.m in Sources */,
 				0D4830661BCB92D90042CFA0 /* SDWebImageDownloader.m in Sources */,
 				0D4830701BCB92D90042CFA0 /* UIView+WebCacheOperation.m in Sources */,
@@ -869,6 +890,7 @@
 				0D99C5101BD7815D00ACFA92 /* LoginViewController.m in Sources */,
 				0D99C5011BD68E4B00ACFA92 /* NewsTabelView.m in Sources */,
 				0DD489241BCE5532005AF9BB /* SkillModel.m in Sources */,
+				0D99C52B1BD8DA5100ACFA92 /* SkillDesViewController.m in Sources */,
 				0D4830621BCB92D90042CFA0 /* NSData+ImageContentType.m in Sources */,
 				0DD489081BCCE194005AF9BB /* FreeView.m in Sources */,
 				0D482FF41BCB914B0042CFA0 /* main.m in Sources */,
@@ -878,6 +900,7 @@
 				0D4830681BCB92D90042CFA0 /* SDWebImageManager.m in Sources */,
 				0D4830651BCB92D90042CFA0 /* SDWebImageDecoder.m in Sources */,
 				0D66FBA11BD0EA0800A42CEC /* TipsTableViewCell.m in Sources */,
+				0D99C5221BD8741600ACFA92 /* SkillCollectionViewController.m in Sources */,
 				0DD489051BCCE032005AF9BB /* HeroViewController.m in Sources */,
 				0D4830631BCB92D90042CFA0 /* SDImageCache.m in Sources */,
 				0D7514141BD4E0A100719630 /* ChooseHeroViewController.m in Sources */,
@@ -1020,12 +1043,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yayun Cui (5YJ4376P85)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = /Users/xuqing/Documents/iosspace/MyLOL/MyLOL/prefix.pch;
 				INFOPLIST_FILE = MyLOL/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.bestkayle.MyLOL;
+				PRODUCT_BUNDLE_IDENTIFIER = net.bestkayle.MyLOLBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0b0cd116-1b01-4015-8797-6875a84a564e";
 			};
 			name = Debug;
 		};
@@ -1033,12 +1060,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yayun Cui (5YJ4376P85)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = /Users/xuqing/Documents/iosspace/MyLOL/MyLOL/prefix.pch;
 				INFOPLIST_FILE = MyLOL/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.bestkayle.MyLOL;
+				PRODUCT_BUNDLE_IDENTIFIER = net.bestkayle.MyLOLBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0b0cd116-1b01-4015-8797-6875a84a564e";
 			};
 			name = Release;
 		};

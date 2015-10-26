@@ -42,11 +42,11 @@ static NSMutableArray *allarry ;
     [seg addTarget:self action:@selector(switchView:) forControlEvents:(UIControlEventValueChanged)];
     [self.view addSubview:seg];
     
-    _activityView = [[UIActivityIndicatorView alloc]initWithFrame:(CGRectMake(KScreenWidth/2, KScreenHeight * 2/3, 30, 30))];
-    
-    _activityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-    
-    _activityView.backgroundColor = [UIColor yellowColor];
+//    _activityView = [[UIActivityIndicatorView alloc]initWithFrame:(CGRectMake(KScreenWidth/2, KScreenHeight * 2/3, 30, 30))];
+//    
+//    _activityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+//    
+//    _activityView.backgroundColor = [UIColor yellowColor];
     
     _myHeroView = [[FreeView alloc]initWithFrame:(CGRectMake(0, 30, seg.bounds.size.width, self.view.bounds.size.height - 30))];
     _myHeroView.tag = 1001;
@@ -83,11 +83,11 @@ static NSMutableArray *allarry ;
     [self.bottomView addSubview:_searchBar];
     [self.bottomView addSubview:_freeView];
     
-    [_allView addSubview:_activityView];
+//    [_allView addSubview:_activityView];
     
-    [_freeView addSubview:_activityView];
+//    [_freeView addSubview:_activityView];
     
-    [_activityView startAnimating];
+//    [_activityView startAnimating];
 
     
     // Do any additional setup after loading the view.
@@ -142,7 +142,7 @@ static NSMutableArray *allarry ;
         dispatch_async(dispatch_get_main_queue(), ^{
             _freeView.arr = array;
         });
-        [_activityView stopAnimating];
+//        [_activityView stopAnimating];
         
     }];
 }
@@ -164,7 +164,7 @@ static NSMutableArray *allarry ;
             _allView.arr = array;
             allarry = array;
         });
-        [_activityView stopAnimating];
+//        [_activityView stopAnimating];
         
     }];
 }
@@ -190,7 +190,7 @@ static NSMutableArray *allarry ;
         dispatch_async(dispatch_get_main_queue(), ^{
             _myHeroView.arr = array;
         });
-        [_activityView stopAnimating];
+//        [_activityView stopAnimating];
         
     }];
         
